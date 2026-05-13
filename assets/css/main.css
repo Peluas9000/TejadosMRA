@@ -26,12 +26,21 @@ img { max-width: 100%; display: block; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.95); backdrop-filter: blur(16px); border-bottom: 1px solid #f3f4f6; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 @media(min-width:768px){ .header-inner { height: 80px; } }
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo-mark { width: 36px; height: 36px; border-radius: 8px; background: var(--brand); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(253,136,1,.25); transition: transform .25s; }
-.logo:hover .logo-mark { transform: scale(1.06); }
-.logo-text { font-family: 'Poppins'; font-weight: 800; font-size: 18px; color: #222; letter-spacing: -0.02em; }
-.logo-text span { color: var(--brand); }
-@media(min-width:768px){ .logo-text { font-size: 20px; } }
+
+/* --- NUEVOS ESTILOS PARA LA IMAGEN DEL LOGO --- */
+.logo { display: flex; align-items: center; }
+.logo-img { 
+  max-height: 48px; /* Controla que no se salga en móviles (la barra mide 64px) */
+  width: auto; 
+  object-fit: contain; 
+  transition: transform .25s; 
+}
+@media(min-width:768px){ 
+  .logo-img { max-height: 64px; /* Crece en PC sin salirse (la barra mide 80px) */ } 
+}
+.logo:hover .logo-img { transform: scale(1.05); }
+/* ---------------------------------------------- */
+
 .nav-desktop { display: none; gap: 32px; align-items: center; }
 @media(min-width:768px){ .nav-desktop { display: flex; } }
 .nav-link { font-family: 'Poppins'; font-weight: 600; font-size: 14px; color: #222; transition: color .2s; }
