@@ -141,7 +141,6 @@
   ],
   "exclude": [
     "../node_modules",
-    "../../node_modules",
     "../node_modules/.pnpm/nuxt@3.21.5_@parcel+watcher@2.5.6_@vue+compiler-sfc@3.5.34_cac@6.7.14_db0@0.3.4_ioredis_54246072d924a210542d4ca2685f6b8e/node_modules/nuxt/node_modules",
     "../node_modules/.pnpm/@nuxt+devtools@3.2.4_vite@7.3.3_jiti@2.7.0_terser@5.47.1_yaml@2.9.0__vue@3.5.34_typescript@5.9.3_/node_modules/@nuxt/devtools/node_modules",
     "../node_modules/.pnpm/@nuxt+telemetry@2.8.0_@nuxt+kit@3.21.5_magicast@0.5.2_/node_modules/@nuxt/telemetry/node_modules",
