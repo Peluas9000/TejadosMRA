@@ -1,0 +1,35 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos autogenerados y compilados por Nuxt 3
+.nuxt/
+.output/
+.nitro/
+dist/
+public/_nuxt/
+
+# Archivos de entorno (Variables secretas, contraseñas, etc.)
+.env
+.env.*
+!.env.example
+
+# Logs de errores de gestores de paquetes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos del sistema operativo (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Archivos locales de editores de código (VS Code, WebStorm)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
