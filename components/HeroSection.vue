@@ -12,7 +12,19 @@ const { text } = useTypewriter(['Goteras', 'Humedades', 'Canalones', 'Cubiertas'
 
 <template>
   <section id="top" class="hero">
-    <div class="hero-bg" />
+    <div class="hero-bg">
+      <NuxtImg
+        src="https://images.unsplash.com/photo-1763665814538-8ba04597286c?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
+        alt="Tejado en la Sierra de Madrid"
+        class="hero-bg-img"
+        width="1920"
+        height="1080"
+        format="webp"
+        loading="eager"
+        fetchpriority="high"
+        preload
+      />
+    </div>
     <div class="hero-overlay" />
     <div class="container">
       <div class="hero-inner">

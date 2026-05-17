@@ -1,4 +1,4 @@
-import { onMounted, onBeforeUnmount } from 'vue'
+import { onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 /**
  * Activa la clase `is-visible` en elementos con `.reveal`
@@ -7,8 +7,9 @@ import { onMounted, onBeforeUnmount } from 'vue'
 export function useReveal(selector = '.reveal'): void {
   let observer: IntersectionObserver | null = null
 
-  onMounted(() => {
+  onMounted(async () => {
     if (typeof window === 'undefined') return
+    await nextTick()
     const elements = document.querySelectorAll<HTMLElement>(selector)
 
     if (!('IntersectionObserver' in window)) {

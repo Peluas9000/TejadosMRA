@@ -15,13 +15,13 @@ useReveal()
       <HeroSection :on-quote-click="openQuote" />
       <TrustBanner :on-quote-click="openQuote" />
       <ServicesGrid :on-quote-click="openQuote" />
-      <ProcessTimeline />
-      <TestimonialsCarousel />
-      <ZonesGrid />
-      <FaqAccordion />
+      <LazyProcessTimeline />
+      <LazyTestimonialsCarousel />
+      <LazyZonesGrid />
+      <LazyFaqAccordion />
     </main>
-    <AppFooter />
+    <LazyAppFooter />
     <FloatingWhatsApp />
-    <QuoteDialog v-model:open="quoteOpen" />
+    <LazyQuoteDialog v-model:open="quoteOpen" />
   </div>
 </template>

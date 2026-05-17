@@ -33,7 +33,7 @@ const stars: ReadonlyArray<number> = [1, 2, 3, 4, 5]
           </div>
           <p class="testimonial-text">&ldquo;{{ t.text }}&rdquo;</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">{{ t.name.charAt(0) }}</div>
+            <div class="testimonial-avatar" style="width:40px;height:40px;">{{ t.name.charAt(0) }}</div>
             <div>
               <div class="testimonial-name">{{ t.name }}</div>
               <div class="testimonial-zone">{{ t.zone }}</div>

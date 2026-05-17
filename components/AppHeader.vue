@@ -23,10 +23,15 @@ const navLinks: ReadonlyArray<{ href: string; label: string }> = [
     <div class="container">
       <div class="header-inner">
         <a href="#top" class="logo">
-          <img
-            src="~/assets/img/TejadoMRA.jpeg"
+          <NuxtImg
+            src="/img/TejadoMRA.jpeg"
             alt="Tejados M.R.A. Logo"
             class="logo-img"
+            width="180"
+            height="64"
+            format="webp"
+            loading="eager"
+            fetchpriority="high"
           />
         </a>
 
